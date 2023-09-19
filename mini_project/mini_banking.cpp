@@ -54,6 +54,7 @@ int main()
         std::cin >> choice;
 
         std::cin.clear();
+        fflush(stdin);
 
         switch (choice)
         {
