@@ -25,7 +25,7 @@ int main()
     }
     std::cout << std::endl;
 
-    n = 5; // Reset n to 5
+    n = 5;
     std::cout << "Do-While Loop:" << std::endl;
     do
     {
