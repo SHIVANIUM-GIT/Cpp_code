@@ -10,7 +10,6 @@ int main()
     std::string LastName = "Rathore";
     std::string FullName = concatstring(FirstName, LastName);
 
-    std::cout << "hello =>"
-              << " " << FullName;
+    std::cout << "hello =>" << FullName;
     return 0;
 }
