@@ -53,6 +53,8 @@ int main()
         std::cout << "4. Exit from bank \n";
         std::cin >> choice;
 
+        std::cin.clear();
+
         switch (choice)
         {
         case 1:
