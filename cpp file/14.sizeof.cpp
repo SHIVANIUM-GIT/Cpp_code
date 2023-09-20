@@ -13,7 +13,7 @@ int main()
     std::cout << LONG_LONG_MAX << '\n';
     std::cout << LONG_LONG_MIN << '\n';
 
-    std::cout << "Size of array";
+    std::cout << "Size of array" << '\n';
     char name[4] = {'A', 'B', 'C', 'D'};
     std::cout << sizeof(name) << '\n';
     return 0;
