@@ -2,7 +2,7 @@
 #include <vector>
 
 int main() {
-    // Declare and initialize a vector with two elements using emplace_back
+    // Declare and initialize a vector with two elements using push_back and emplace_back
     std::vector<int> v;
     v.push_back(1);
     v.emplace_back(2);
@@ -68,19 +68,24 @@ int main() {
         std::cout << element << " "; // Output: 300 5 5 100 100
     }
 
-    std::vector<int> copy(2,50);
+    // Insert elements from another vector (copy) into v4
+    std::vector<int> copy(2, 50);
     v4.insert(v2.begin(), copy.begin(), copy.end());
 
-    std::cout<<v4.size()<<std::endl;
-    
+    // Print the size of v4
+    std::cout << v4.size() << std::endl; // Output: 12
+
+    // Remove the last element
     v4.pop_back();
 
+    // Swap the contents of v4 with v
     v4.swap(v);
 
+    // Clear the elements in v
     v.clear();
 
-    std::cout<<v4.empty();
-
+    // Check if v4 is empty
+    std::cout << v4.empty(); // Output: 0 (false)
 
     return 0;
 }
